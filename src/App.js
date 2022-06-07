@@ -12,6 +12,8 @@ function App() {
   const count = useSelector((state)=> state.count)
   return (
     <div className="App">
+      <input type="number" placeholder="Enter Number" style={{width:"120px" }}>
+      </input>
       <h1>Counter:{count}</h1>
       <button onClick={()=>dispatch(Add(1))}>Add</button>
       <button onCanPlay={()=>dispatch(sub(1))}>Subtract</button>
