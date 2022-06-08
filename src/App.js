@@ -13,7 +13,7 @@ function App() {
   const counter = useSelector((state)=> state.counter)
   return (
     <div className="App">
-      <input type="number" placeholder="Enter Number" style={{width:"120px" }}>
+      <input type="number" placeholder="Value" style={{width:"120px" }}>
       </input>
       <h1>counter:{counter}</h1>
       <button onClick={(()=> dispatch({type:Increment}))}>ADD</button>
