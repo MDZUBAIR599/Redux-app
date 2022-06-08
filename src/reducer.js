@@ -1,15 +1,20 @@
-import { Decrement, Increment } from "./action.types";
+import { Decrement, Divide, Increment, Multiply } from "./action.types";
 
 
 
 export const reducer =(state, {type, payload})=>{
     switch(type){
         case Increment:{
-            state.count=state.count+payload;
-            return{ ...state };
+            return {counter:state.counter+1}
         }case Decrement:{
-            state.count=state.count-payload;
-            return{ ...state };
+            return {counter:state.counter-1}
+        }
+        
+        case Multiply:{
+            return {counter:state.counter*state.counter}
+        }
+        case Divide:{
+            return {counter:state.counter/state.counter}
         }
         
         

@@ -3,6 +3,6 @@ import {legacy_createStore} from "redux"
 
 
 let initialState={
-    count:0,
+    counter:0,
 }
 export const store= legacy_createStore(reducer,initialState);
